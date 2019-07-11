@@ -5,7 +5,7 @@ tags: ENOWARS3 C# EnoEngine Scoring
 author: Trolldemorted
 ---
 
-As all of you have witnessed, attack and lost defense points was completely broken for the first few rounds - every flag you lost took defense points from, and every flag you captured gave you attack points for **all** services.
+As all of you have witnessed, attack and lost defense points were completely broken for the first few rounds - every flag you lost took defense points from, and every flag you captured gave you attack points for **all** services.
 
 
 This happened because some where statements were missing in our database queries:
@@ -23,4 +23,4 @@ await _context.SubmittedFlags
 ```
 so every flag was used during the calculation of every service.
 
-We were able to address this issue quickly, and recalculated the scoreboard after ENOWARS3 finished.
+We were able to address this issue quickly, and recalculated the points after ENOWARS3 finished.
