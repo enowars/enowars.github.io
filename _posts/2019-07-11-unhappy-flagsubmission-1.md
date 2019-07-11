@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Unhappy Flagsubmission, Part 1
+tags: ENOWARS3 C# EnoEngine
+author: Trolldemorted
 ---
-
+## Unhappy Flagsubmission, Part 1
 Immediately after we opened the network, multiple teams exploited `Voting`, and complained that our flag submission endpoint was always responding `INTERNAL_ERROR`.
 
 As you have noticed, the issue was fixed during the CTF, and I mentioned on IRC that this error would not have happened in Rust.
