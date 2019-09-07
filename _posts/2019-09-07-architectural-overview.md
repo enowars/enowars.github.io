@@ -5,19 +5,20 @@ tags: ENOWARS3 ENOWARS
 author: Trolldemorted
 ---
 
-After we started receiving questions about our setup, we realized a blog post about it was long overdue!
+After we started receiving questions about our setup, we realized a blog post about it was long overdue! This post will give you a brief introduction into the ecosystem we used to deliver ENOWARS 3.
 ```
 +-----------------+      +-------------------+
 |   Elastic Stack |      | Casino Checker    |
-+-----------------+      +-------------------+
-
-+-----------------+      +-------------------+
++-----------------+      +-------------------+      +------------------+
+                                                    | APT Repository   |
++-----------------+      +-------------------+      +------------------+
 |                 |      | Telescopy Checker |
-|   EnoEngine     |      +-------------------+
-|   PostGreSQL    |
-|   EnoLauncher   |      +-------------------+
+|   EnoEngine     |      +-------------------+      +------------------+
+|   PostGreSQL    |                                 | Gamerouter       |
+|   EnoLauncher   |      +-------------------+      +------------------+
 |                 |      | Explotify Checker |
 +-----------------+      +-------------------+
+
 ```
 
 ## [EnoEngine](https://github.com/enowars/EnoEngine)
@@ -35,3 +36,9 @@ Every service has a checker, which offers a REST API the launcher uses to order 
 
 ## [Elastic Stack](https://www.elastic.co)
 Log management in distributed is super important if you want to identify problems quickly, so the engine, launcher and checkers can log json data to be indexed in an elastic stack. This enables us to efficiently filter log messages for things like "related to flag ENOABC" or "related to team 17 and round 19 and service 3".
+
+
+## APT Repository
+As those of you who played ENOWARS 3 know, we distributed our services via apt. This allows us to conveniently last-minute fix our services, and might enable us to not build any dedicated vulnerable virtual machines for ENOWARS 4 - a simple `apt install enowars` could suffice.
+
+## Gamerouter
