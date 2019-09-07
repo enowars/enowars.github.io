@@ -6,6 +6,8 @@ author: Trolldemorted
 ---
 
 After we started receiving questions about our setup, we realized a blog post about it was long overdue! This post will give you a brief introduction into the ecosystem we used to deliver ENOWARS 3.
+
+
 ```
 +-----------------+      +-------------------+
 |   Elastic Stack |      | Casino Checker    |
