@@ -5,7 +5,7 @@ url: https://github.com/enowars
 twitter_username: ENOFLAG
 theme: jekyll-theme-hacker
 
-paginate: 2
+paginate: 7
 
 plugins:
   - jekyll-seo-tag
