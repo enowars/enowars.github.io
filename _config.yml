@@ -4,3 +4,9 @@ description: HAX HAX
 url: https://github.com/enowars
 twitter_username: ENOFLAG
 theme: jekyll-theme-hacker
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
+  
