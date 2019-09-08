@@ -9,7 +9,9 @@ After we started receiving questions about our setup, we realized a blog post ab
 
 
 ```
-+-----------------+      +-------------------+
+                                                    +------------------+
+                                                    | DNS Server       |
++-----------------+      +-------------------+      +------------------+
 |   Elastic Stack |      | Casino Checker    |
 +-----------------+      +-------------------+      +------------------+
                                                     | APT Repository   |
@@ -19,8 +21,9 @@ After we started receiving questions about our setup, we realized a blog post ab
 |   PostGreSQL    |                                 | Gamerouter       |
 |   EnoLauncher   |      +-------------------+      +------------------+
 |                 |      | Explotify Checker |
-+-----------------+      +-------------------+
-
++-----------------+      +-------------------+      +------------------+
+                                                    | EnoScoreboard    |
+                                                    +------------------+
 ```
 
 ## [EnoEngine](https://github.com/enowars/EnoEngine)
